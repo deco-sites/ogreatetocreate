@@ -113,9 +113,9 @@ function CategoryList(props: Props) {
                 )}
               {image &&
                 (
-                  <figure>
+                  <figure class="flex justify-center">
                     <Image
-                      class="card w-full"
+                      class="card w-11/12 hover:w-full grayscale hover:grayscale-0"
                       src={image}
                       alt={description || label || tag}
                       width={160}

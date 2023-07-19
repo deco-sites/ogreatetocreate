@@ -11447,6 +11447,13 @@
           ],
           "title": "Title"
         },
+        "sub": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Sub"
+        },
         "description": {
           "type": [
             "string",

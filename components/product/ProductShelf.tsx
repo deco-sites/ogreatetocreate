@@ -15,6 +15,7 @@ import type { Product } from "deco-sites/std/commerce/types.ts";
 export interface Props {
   products: LoaderReturnType<Product[] | null>;
   title?: string;
+  sub?: string;
   description?: string;
   layout?: {
     headerAlignment?: "center" | "left";
@@ -29,6 +30,7 @@ function ProductShelf({
   description,
   layout,
   cardLayout,
+  sub,
 }: Props) {
   const id = useId();
 
@@ -44,7 +46,7 @@ function ProductShelf({
         fontSize={layout?.headerfontSize || "Large"}
         alignment={layout?.headerAlignment || "center"}
       />
-
+      <div class="text-center">{sub}</div>  
       <div
         id={id}
         class="container grid grid-cols-[48px_1fr_48px] px-0 sm:px-5"
